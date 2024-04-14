@@ -5,4 +5,4 @@ Go to the "assignment.py" file and enter your MySQL credentials into mysql.conne
 
 
 # License
-The code in this repository is released under the [MIT license](https://github.com/nikhil-405/Python-for-data-analysis/blob/3rd-edition/LICENSE-CODE). Read more at the [Open Source Initiative](https://opensource.org/licenses/MIT).
+The code in this repository is released under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). Read more at the [Open Source Initiative]([https://opensource.org/licenses/MIT](https://opensource.org/)).
