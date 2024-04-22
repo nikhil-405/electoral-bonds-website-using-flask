@@ -23,5 +23,13 @@ This is the readme file for the repository.
 
 * ChartJS was used to display the graphs on the website.
 
+
+# Solutions
+
+1bi) The PDFs were converted to CSV using the Python script saved under the name "pdf_to_csv.py". The CSVs are under the name purchase_data and redemption_data
+
+1bii) These CSVs were then imported to a MySQL database named dcc_assignment using the Workbench's Table Import Wizard
+
+
 # License
 The code in this repository is released under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). Read more at the [Open Source Initiative](https://opensource.org/).
