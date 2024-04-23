@@ -29,7 +29,10 @@ This is the readme file for the repository.
 1bi) The PDFs were converted to CSV using the Python script saved under the name "pdf_to_csv.py". The CSVs are under the name purchase_data and redemption_data
 
 1bii) These CSVs were then imported to a MySQL database named dcc_assignment using the Workbench's Table Import Wizard
+      After a little bit of manual processing, the data looked like as below:
 
+
+1c) The required front end was created using HTML, CSS, Flask and Bootstrap
 
 # License
 The code in this repository is released under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). Read more at the [Open Source Initiative](https://opensource.org/).
