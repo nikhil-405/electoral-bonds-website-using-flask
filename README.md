@@ -3,7 +3,7 @@ This is the readme file for the repository.
 # Setting up the website locally
 * Install all the required packages and download the entire repository locally.
 
-* Then, import the CSVs into MySQL databases. Go to the "assignment.py" file and replace the random MySQL credentials by your MySQL credentials into MySQL.connector (Ensure that the database and the tables are under the correct name)
+* Then, import the CSVs into MySQL databases. Go to the "assignment.py" file and replace the random MySQL credentials by your MySQL credentials into MySQL.connector (Ensure that the database and the tables are under the correct name). Alternatively, you can import it using the MySQL dump, but I am not sure if the MySQL database has been exported correctly. If it's not working, please contact me.
 
 * Run the assignment.py file, you will receive the link to a locally hosted website. Open the link in any web browser, and you will be up and running.
 
