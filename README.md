@@ -68,6 +68,23 @@ III)
 
 
 IV) 
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/08310f2e-cf15-4ed2-a9fc-045e03e964f5)
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/d7ec2f85-7fe3-499c-9826-d57bec744a30)
+
+
+V) 
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/fdbd7192-9346-4ecd-bfae-a819443d6fc7)
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/f4a005b0-185f-4320-b352-c21fb7bbfff9)
+
+
+VI)
+In order to load the piechart, you can press the total donations button the website's landing page
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/f39a1be9-26af-4480-b393-0c323fc6b743)
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/f6236182-5a9d-4fcc-9333-d91f07854c67)
+
+
+
+
 
 # License
 The code in this repository is released under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). Read more at the [Open Source Initiative](https://opensource.org/).
