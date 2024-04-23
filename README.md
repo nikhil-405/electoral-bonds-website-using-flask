@@ -84,7 +84,7 @@ In order to load the piechart, you can press the total donations button the webs
 
 
 1f) 
-The plots can be downloaded by clicking them and then saving them in the desired format
+The plots can be downloaded by right clicking them and then saving them in the desired format
 ![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/268032fc-f4da-4654-9197-76c2e8614c11)
 
 2) Instructions
