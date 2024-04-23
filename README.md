@@ -56,7 +56,7 @@ The filter criteria is a dropdown menu
 II) 
 ![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/da40aa4d-339c-437b-8367-c8d8bf522042)
 
-![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/77ad1678-e841-4ad4-af75-36fb935e1416)
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/23fc5a4f-7776-4fed-bd95-a2466990ea83)
 The image below and above are continuous screenshot of the same webpage (idk how to take a scrolling screenshot)
 ![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/1eb7d0b7-d056-449d-ad56-a8a7a6b12179)
 
