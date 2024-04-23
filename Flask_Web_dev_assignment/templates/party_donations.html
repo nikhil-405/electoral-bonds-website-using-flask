@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Party Donations Information</h1>
+    <form action="/party-donations" method="POST">
+        <label for="party_name">Search for Political Party:</label>
+        <input type="text" id="party_name" name="party_name">
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Company Donations Information</h1>
+    <form action="/company-donations" method="POST">
+        <label for="company_name">Search for Company/Individual:</label>
+        <input type="text" id="company_name" name="company_name">
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

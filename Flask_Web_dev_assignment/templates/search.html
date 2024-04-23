@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Search within the databases</h1>
+    <form method="POST">
+        <div class="form-group">
+            <label for="search_query">Search based on bond number:</label>
+            <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Enter bond number">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+{% endblock %}

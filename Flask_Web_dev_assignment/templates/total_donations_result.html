@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Total donations for each party</h1>
+
+    <canvas id="pieChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctxpie = document.getElementById('pieChart').getContext('2d');
+
+        var pieChart = new Chart(ctxpie, {
+            type: 'pie',
+            data: {
+                labels: {{ party_name|tojson }},
+                datasets: [{
+                    label: 'Donation amount',
+                    data: {{ total_donation|tojson }},
+                    backgroundColor: ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+		  '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+		  '#66994D', '#B366CC', '#4D8000', '#B33300'],
+        //   color palette from --> https://gist.github.com/mucar/3898821
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+    </script>
+{% endblock %}

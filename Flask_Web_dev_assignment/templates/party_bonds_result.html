@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Party Bonds per Year for {{ party_name }}</h1>
+    <p>Empty graphs indicate that there is no record for that party name</p>
+    <p>Right click the graphs to download them as images</p>
+
+    <canvas id="bondsChart"></canvas>
+    <canvas id="valueChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctxBonds = document.getElementById('bondsChart').getContext('2d');
+        var ctxValue = document.getElementById('valueChart').getContext('2d');
+
+        var bondsChart = new Chart(ctxBonds, {
+            type: 'bar',
+            data: {
+                labels: {{ years|tojson }},
+                datasets: [{
+                    label: 'Number of Bonds',
+                    data: {{ num_bonds|tojson }},
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        var valueChart = new Chart(ctxValue, {
+            type: 'bar',
+            data: {
+                labels: {{ years|tojson }},
+                datasets: [{
+                    label: 'Total Value',
+                    data: {{ total_value|tojson }},
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Filter Results</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                {% for column in column_names %}
+                    <th>{{ column }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in filtered_data %}
+                <tr>
+                    {% for value in row %}
+                        <td>{{ value|safe }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Total donation to the {{party_name}}: {{total}} </h1>
+    <canvas id="alluvialChart"></canvas>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-sankey"></script>
+
+    <script>
+        var party_name = "{{ party_name }}";
+        var company = {{ company | tojson | safe }};
+        var donation = {{ donation | tojson | safe }};
+
+        // console.log(party_name);
+        // console.log(company);
+        // console.log(donation);
+
+        var formattedData = [];
+        for (var i = 0; i < company.length; i++) {
+            formattedData.push({
+                from: company[i],
+                to: party_name,
+                flow: donation[i]
+            });
+        }
+
+        // console.log("F:", formattedData);
+
+        var ctx = document.getElementById('alluvialChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'sankey',
+            data: {
+                datasets: [{
+                    data: formattedData
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}
+
+

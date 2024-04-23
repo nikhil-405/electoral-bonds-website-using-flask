@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: -50px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+
+    <div class="container content-container">
+        <h1>Welcome to the website</h1>
+        <!-- <p>You can access the search functionality from the Navbar</p> -->
+
+        <p>Please select one of the following tasks:</p>
+        <a href="/search" class="button">Search Records</a>
+        <a href="/filter" class="button">Filter Records based on columns</a>
+        <a href="/bond" class="button">Company Bond Statistics</a>
+        <a href="/party-bonds" class="button">Political Party Bond Statistics</a>
+        <a href="/party-donations" class="button">Party Donations</a>
+        <a href="/company-donations" class="button">Company Donations</a>
+        <a href="/total-donations" class="button">Total Donations</a>
+    </div>
+{% endblock %}

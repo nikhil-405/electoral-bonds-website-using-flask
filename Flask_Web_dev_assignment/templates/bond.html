@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Company/Individual Bond Statistics</h1>
+    <form action="/bond" method="POST">
+        <label for="person_name">Search for Company/Individual:</label>
+        <input type="text" id="person_name" name="person_name">
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

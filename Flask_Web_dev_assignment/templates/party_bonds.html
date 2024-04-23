@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Party Bonds per Year</h1>
+
+    <form action="/party-bonds" method="POST">
+        <label for="party_name">Search for Political Party:</label>
+        <input type="text" id="party_name" name="party_name">
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock %}

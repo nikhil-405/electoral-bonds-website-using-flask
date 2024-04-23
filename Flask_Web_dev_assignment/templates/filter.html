@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Filtering based on column</h1>
+    <form id="filter_form" action="/submit-filter" method="POST">
+        <div class="form-group">
+            <label for="filter_criteria">Filter by:</label>
+            <select class="form-control" id="filter_criteria" name="filter_criteria">
+                <option value="name_of_the_purchaser">name_of_the_purchaser</option>
+                <option value="reference_no">reference_no</option>
+                <option value="prefix">prefix</option>
+                <option value="bond_num">bond_number</option>
+                <option value="denominations">denominations</option>
+                <option value="branch_code">issue_branch_code</option>
+                <option value="pay_teller">issue_teller</option>
+                <option value="journal_date">journal_date</option>
+                <option value="date_of_purchase">date_of_purchase</option>
+                <option value="date_of_expiry">date_of_expiry</option>
+                <option value="party_name">party_name</option>
+                <option value="ac_no">ac_no</option>
+                <option value="pay_branch">pay_branch</option>
+                <option value="pay_teller">pay_teller</option>
+                <option value="date_of_encashment">date_of_encashment</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="filter_value">Filter value:</label>
+            <input type="text" class="form-control" id="filter_value" name="filter_value">
+        </div>
+        <button type="submit" class="btn btn-success">Filter</button>
+    </form>
+{% endblock %}
