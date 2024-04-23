@@ -30,9 +30,17 @@ This is the readme file for the repository.
 
 1bii) These CSVs were then imported to a MySQL database named dcc_assignment using the Workbench's Table Import Wizard
       After a little bit of manual processing, the data looked like as below:
+![1bii_2](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/1db66c6c-cd67-49c9-aee0-78453890d1a4)
+![1bii_1](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/a0d6008a-cce3-4105-aa55-f512b795d58d)
 
 
 1c) The required front end was created using HTML, CSS, Flask and Bootstrap
+![Main UI](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/ca1e9c64-6a69-4fed-a2ec-b01d3599a286)
 
+1d) The frontend was connected to the database using Flask, code for the same has been attached in the assignment.py file
+
+1e)
+
+I) 
 # License
 The code in this repository is released under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). Read more at the [Open Source Initiative](https://opensource.org/).
