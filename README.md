@@ -83,7 +83,13 @@ In order to load the piechart, you can press the total donations button the webs
 ![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/f6236182-5a9d-4fcc-9333-d91f07854c67)
 
 
+1f) 
+The plots can be downloaded by clicking them and then saving them in the desired format
+![image](https://github.com/nikhil-405/flask_web-dev_assignment/assets/148058602/268032fc-f4da-4654-9197-76c2e8614c11)
 
+2) Instructions
+3) No additional functionality added
+4) GitHub Repo done
 
 
 # License
